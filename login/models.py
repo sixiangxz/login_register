@@ -31,7 +31,7 @@ class ConfirmStr(models.Model):
 
     code = models.CharField(max_length=256,)
     user = models.OneToOneField('User', on_delete=models.CASCADE)
-    Uc_time = models.DateTimeField(auto_now_add=True)
+    c_time = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
 

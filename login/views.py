@@ -46,7 +46,9 @@ def index(request):
 
     # 没登录不允许前往主页
     if not request.session.get('is_login', None):
+        print('jaja')
         return redirect('/login/')
+    print("gg")
     return render(request, 'login/index.html')
 
 
